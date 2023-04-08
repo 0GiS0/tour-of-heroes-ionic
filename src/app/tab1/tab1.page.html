@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Heroes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content [fullscreen]="true"> -->
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Heroes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- <div id="container">
+    <ion-card *ngFor="let hero of heroes">
+      <img alt="{{hero.name}}" src="assets/heroes/{{hero.name | lowercase | replace: ' ':'-'}}.jpeg" />
+      <ion-card-header>
+        <ion-card-title>{{hero.name}}</ion-card-title>
+     
+      </ion-card-header>
+      <ion-card-content>
+        {{ hero.description }}
+      </ion-card-content>
+    </ion-card>
+  </div> -->
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let hero of heroes">
+        <ion-thumbnail slot="start">
+          <img alt="{{hero.name}}" src="assets/heroes/{{hero.name | lowercase | replace: ' ':'-'}}.jpeg" />
+        </ion-thumbnail>
+        <ion-label>{{hero.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-content>
