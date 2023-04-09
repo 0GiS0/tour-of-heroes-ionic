@@ -1,7 +1,7 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
-import { ReplacePipe } from './replace.pipe';
+import { ApplicationInsightsService } from './application.insights.service';
 
 @Component({
   selector: 'app-root',
@@ -16,5 +16,5 @@ import { ReplacePipe } from './replace.pipe';
 export class AppComponent {
   public environmentInjector = inject(EnvironmentInjector);
 
-  constructor() { }
+  constructor(private appInsights: ApplicationInsightsService) { }
 }

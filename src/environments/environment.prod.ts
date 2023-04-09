@@ -1,4 +1,7 @@
 export const environment = {
   production: true,
-  apiUrl: ''
+  apiUrl: '',
+  appInsights: {
+    connectionString: '[Replace With Your Key]'
+  }
 };
