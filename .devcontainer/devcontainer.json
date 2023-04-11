@@ -11,6 +11,9 @@
 		},
 		"ghcr.io/devcontainers/features/azure-cli:1": {
 			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {
+			"version": "latest"
 		}
 	},
 	"customizations": {
